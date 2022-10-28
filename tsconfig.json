@@ -18,8 +18,18 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["/app/*"],
+      "@comp/*": ["/components/*"],
+      "@ctx/*": ["/context/*"],
+      "@lib/*": ["/lib/*"],
+      "@pub/*": ["/public/*"],
+      "@util/*": ["/utils/*"],
+      "~/*": ["/styles/*"],
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/**/*.jsx"],
   "exclude": ["node_modules"]
 }
